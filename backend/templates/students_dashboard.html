@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Student Dashboard</h2>
+
+<p><strong>Username:</strong> {{ student.user.username }}</p>
+<p><strong>Registration Number:</strong> {{ student.registration_number }}</p>
+<p><strong>Course:</strong> {{ student.course }}</p>
+<p><strong>Year:</strong> {{ student.year_of_study }}</p>
+<p><strong>IPT Status:</strong> {{ student.get_ipt_status_display }}</p>
+
+{% endblock %}
